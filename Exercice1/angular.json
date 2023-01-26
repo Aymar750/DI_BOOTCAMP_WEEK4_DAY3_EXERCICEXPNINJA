@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Exercice1": {
+    "ExerciceXpNinja": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/exercice1",
+            "outputPath": "dist/exercice-xp-ninja",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Exercice1:build:production"
+              "browserTarget": "ExerciceXpNinja:build:production"
             },
             "development": {
-              "browserTarget": "Exercice1:build:development"
+              "browserTarget": "ExerciceXpNinja:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Exercice1:build"
+            "browserTarget": "ExerciceXpNinja:build"
           }
         },
         "test": {
@@ -94,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "0c185f07-8859-4cec-bd13-877c40a027d1"
   }
 }
